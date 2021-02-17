@@ -22,6 +22,9 @@ Rely on :
 * spring webflux
 * R2DBC with Mysql
 
+### JMeter scripts
+
+Find jmeter script in [/jmeter](/jmeter) folder.
 
 ## Release notes
 
