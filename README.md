@@ -14,6 +14,14 @@ Rely on :
 * spring MVC
 * JPA with Mysql
 
+### ASYNC version
+
+Rely on :
+
+* spring-boot
+* spring webflux
+* R2DBC with Mysql
+
 
 ## Release notes
 

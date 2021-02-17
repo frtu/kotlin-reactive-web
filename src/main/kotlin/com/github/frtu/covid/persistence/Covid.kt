@@ -1,16 +1,19 @@
 package com.github.frtu.covid.persistence
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import org.springframework.data.annotation.Id
+import org.springframework.data.relational.core.mapping.Table
+
+//import javax.persistence.Entity
+//import javax.persistence.GeneratedValue
+//import javax.persistence.GenerationType
+//import javax.persistence.Id
 
 
-//@Table("covid")
-@Entity
+@Table("covid")
+//@Entity
 data class Covid(
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     val provinceState: String? = null,
     val countryRegion: String? = null,
