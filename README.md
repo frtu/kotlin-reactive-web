@@ -20,7 +20,8 @@ Rely on :
 
 * spring-boot
 * spring webflux
-* [R2DBC](http://r2dbc.io) with Mysql
+* [spring-data](https://github.com/spring-projects/spring-data-r2dbc) & [R2DBC](https://r2dbc.io/) 
+* [with H2](https://github.com/r2dbc/r2dbc-h2#getting-started) or with Mysql
 
 ### Performance
 
@@ -33,6 +34,12 @@ Access Prometheus metrics through :
 #### JMeter scripts
 
 Find jmeter script in [/jmeter](/jmeter) folder.
+
+## See also
+
+* Spring getting started with R2DBC : [https://docs.spring.io/spring-data/r2dbc/docs/1.0.x/reference/html/#r2dbc.connectionfactory](https://docs.spring.io/spring-data/r2dbc/docs/1.0.x/reference/html/#r2dbc.connectionfactory)
+* Spring guide for R2DBC : [https://spring.io/guides/gs/accessing-data-r2dbc/](https://spring.io/guides/gs/accessing-data-r2dbc/)
+* Spring R2DBC samples : [https://github.com/hantsy/spring-r2dbc-sample](https://github.com/hantsy/spring-r2dbc-sample)
 
 ## Release notes
 
