@@ -20,9 +20,17 @@ Rely on :
 
 * spring-boot
 * spring webflux
-* R2DBC with Mysql
+* [R2DBC](http://r2dbc.io) with Mysql
 
-### JMeter scripts
+### Performance
+
+#### Performance metrics
+
+Access Prometheus metrics through : 
+
+* [http://localhost:8080/actuator/prometheus](http://localhost:8080/actuator/prometheus)
+
+#### JMeter scripts
 
 Find jmeter script in [/jmeter](/jmeter) folder.
 
