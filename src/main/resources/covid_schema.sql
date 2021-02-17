@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS covid (province_state varchar(255), country_region varchar(255), lat DECIMAL(10, 8), lng DECIMAL(11, 8), Date varchar(255), value varchar(255), iso3166 varchar(255), region_code varchar(255), sub_region_code varchar(255), intermediate_region_code varchar(255));
