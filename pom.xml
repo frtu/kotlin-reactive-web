@@ -18,6 +18,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <!-- https://search.maven.org/artifact/org.springdoc/springdoc-openapi-ui/1.5.4/jar -->
+        <springdoc.version>1.5.4</springdoc.version>
         <!--<frtu.tools.version>1.0.2</frtu.tools.version>-->
         <!--===========================-->
         <!-- https://kotlinlang.org/docs/reference/using-maven.html -->
@@ -35,14 +37,21 @@
     </properties>
 
     <dependencies>
+        <!-- https://search.maven.org/artifact/org.springdoc/springdoc-openapi-ui/1.5.4/jar -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>${springdoc.version}</version>
+        </dependency>
+
         <!--===========================-->
         <!-- APIs -->
         <!--===========================-->
         <!-- SYNCHRONOUS-->
-        <!--<dependency>-->
-        <!--    <groupId>org.springframework.boot</groupId>-->
-        <!--    <artifactId>spring-boot-starter-web</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!-- PERSISTANCE -->
         <!-- UNCOMMENT FOR JPA 1/3 -->
         <!--<dependency>-->
@@ -165,6 +174,12 @@
             <groupId>io.kotlintest</groupId>
             <artifactId>kotlintest-runner-junit5</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>classgraph</artifactId>
+                    <groupId>io.github.classgraph</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Application tests libs-->

@@ -35,6 +35,14 @@ Access Prometheus metrics through :
 
 Find jmeter script in [/jmeter](/jmeter) folder.
 
+## API
+
+Access Swagger API at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+Make sure the JSON schema is referencing :
+
+* Access API Docs (JSON) at [http://localhost:8080/v3/api-docs/](http://localhost:8080/v3/api-docs/)
+
 ## See also
 
 * Spring getting started with R2DBC : [https://docs.spring.io/spring-data/r2dbc/docs/1.0.x/reference/html/#r2dbc.connectionfactory](https://docs.spring.io/spring-data/r2dbc/docs/1.0.x/reference/html/#r2dbc.connectionfactory)
